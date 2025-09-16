@@ -41,7 +41,7 @@ use Tina4;
 });
 
 /**
- * Route to return records of a class
+ * Route to return records of a class including query parameter filtering
  * @secure
  */
 \Tina4\Get::add($_ENV["GENERIC_API_BASE_URL"] . "/{className}", function($className, Tina4\Response $response, Tina4\Request $request){
@@ -61,7 +61,20 @@ use Tina4;
         if(isset($request->params["offset"])){
             $offset = $request->params["offset"];
         }
-        $result = $class->select("*", $limit, $offset)->asObject();
+
+        $where = FilterHelper::buildFilterClause($class->fieldMapping, $request->params);
+
+        // build return object
+        $result = (new \stdClass());
+        $buildData = $class->select("*", $limit, $offset);
+        if(!empty($where["sql"]))
+        {
+            $buildData->where($where["sql"], $where["data"]);
+        }
+        $result->data = $buildData->asObject();
+        $result->noOfRecords = count($result->data);
+        $result->offset = (int) $offset;
+        $result->limit = (int) $limit;
 
         return $response($result, HTTP_OK);
     }

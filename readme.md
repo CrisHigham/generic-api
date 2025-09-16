@@ -30,7 +30,7 @@ All ORM objects should have a primary key `id`.
 
 All endpoints can be extended with a prefix set in the .env file by setting the flag GENERIC_API_BASE_URL
 
-Ping is an api verificaion endpoing `/ping`
+Ping is an api verificaion endpoint `/ping`. This can be used to test security and that the api is working.
 
 Get all rows - GET `/[class name]`
 
@@ -38,7 +38,13 @@ Get one row - GET `/[class name]/{id}`
 
 Insert a row - POST `/[class name]`
 
-Update a row - POST `/[class name]/{id}`
+Partially update a single row - PATCH `/[class name]/{id}`
+
+Partially update a batch of rows - PATCH `/[class name]`
+
+Completely update a single row - PUT `/[class name]/{id}`
+
+Completely update a batch of rows - PUT `/[class name]`
 
 Delete a row - DELETE `/[class name/{id}`
 
@@ -48,6 +54,38 @@ Class names should be supplied lower case. Complex class names should be separat
 
 For example:
 `/my-class-name` will resolve to `MyClassName` in the ORM.
+
+## Receiving data
+
+All data is sent as JSON objects or array of objects to the endpoints.
+
+PUT, PATCH and DELETE batch endpoints can receive data as an array or single record.
+
+Care should be taken with the PUT endpoints, failure to specify all data could result in empty fields, especially if
+field defaults are not set.
+
+## Sending data
+
+Endpoints will send error messages if things did not go well. All successful calls will result in sending all the data of 
+the modified objects. 
+
+Sending the ```nodata=1``` query parameter with each call, will result in just the affected id's being returned.
+
+## Filters
+
+These filters are available only on the get all rows endpoint. Filters can be added as query parameters in the form
+
+```?field=operator:term```
+
+#### Available operators ####
+~~~
+eq - field that is equal to the term 
+ne - field that is not equal to the term
+~~~
+
+Concatenation of filters is acceptable
+
+```?field1=operator:term&field2=operator:term```
 
 ## Validation
 
@@ -65,4 +103,10 @@ the value as is (including manipulations), and an error message if required.
 
 ## Testing
 
-There is a simple test application built around generic-api and can be found at CrisHigham/generic-api-example. This was built as the base for a postman testing suite and can be used as a base project at your own risk.
+There is a simple test application built around generic-api and can be found at CrisHigham/generic-api-example. This was built as the base for, and includes, a bruno testing suite and can be used as a base project at your own risk.
+
+## Roadmap
+
+* Ability to do validation
+* Ability to add defaults
+* Standardize the error pattern

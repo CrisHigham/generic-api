@@ -3,7 +3,7 @@
     "description": "Creates an api, just add orm objects",
     "license": "MIT",
     "require": {
-        "tina4stack/tina4php": "^2.0"
+        "tina4stack/tina4php": "2.0.82"
     },
     "scripts": {
         "tina4": "tina4",

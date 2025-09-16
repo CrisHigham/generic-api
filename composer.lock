@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "08fcade8c15c3a68a67b8f6cfcf45a92",
+    "content-hash": "39d81ab7582c2c0096b7019d4a023f60",
     "packages": [
         {
             "name": "cesargb/php-log-rotation",
@@ -421,16 +421,16 @@
         },
         {
             "name": "scssphp/scssphp",
-            "version": "v1.12.1",
+            "version": "v1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scssphp/scssphp.git",
-                "reference": "394ed1e960138710a60d035c1a85d43d0bf0faeb"
+                "reference": "63d1157457e5554edf00b0c1fabab4c1511d2520"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scssphp/scssphp/zipball/394ed1e960138710a60d035c1a85d43d0bf0faeb",
-                "reference": "394ed1e960138710a60d035c1a85d43d0bf0faeb",
+                "url": "https://api.github.com/repos/scssphp/scssphp/zipball/63d1157457e5554edf00b0c1fabab4c1511d2520",
+                "reference": "63d1157457e5554edf00b0c1fabab4c1511d2520",
                 "shasum": ""
             },
             "require": {
@@ -459,8 +459,8 @@
             "type": "library",
             "extra": {
                 "bamarni-bin": {
-                    "forward-command": false,
-                    "bin-links": false
+                    "bin-links": false,
+                    "forward-command": false
                 }
             },
             "autoload": {
@@ -495,22 +495,22 @@
             ],
             "support": {
                 "issues": "https://github.com/scssphp/scssphp/issues",
-                "source": "https://github.com/scssphp/scssphp/tree/v1.12.1"
+                "source": "https://github.com/scssphp/scssphp/tree/v1.13.0"
             },
-            "time": "2024-01-13T12:36:40+00:00"
+            "time": "2024-08-17T21:02:11+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
-            "version": "v3.4.0",
+            "version": "v3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "7c3aff79d10325257a001fcf92d991f24fc967cf"
+                "reference": "63afe740e99a13ba87ec199bb07bbdee937a5b62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/7c3aff79d10325257a001fcf92d991f24fc967cf",
-                "reference": "7c3aff79d10325257a001fcf92d991f24fc967cf",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/63afe740e99a13ba87ec199bb07bbdee937a5b62",
+                "reference": "63afe740e99a13ba87ec199bb07bbdee937a5b62",
                 "shasum": ""
             },
             "require": {
@@ -518,12 +518,12 @@
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-main": "3.4-dev"
-                },
                 "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
+                "branch-alias": {
+                    "dev-main": "3.6-dev"
                 }
             },
             "autoload": {
@@ -548,7 +548,7 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.4.0"
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.6.0"
             },
             "funding": [
                 {
@@ -564,24 +564,24 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-05-23T14:45:45+00:00"
+            "time": "2024-09-25T14:21:43+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.29.0",
+            "version": "v1.33.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "ef4d7e442ca910c4764bce785146269b30cb5fc4"
+                "reference": "a3cc8b044a6ea513310cbd48ef7333b384945638"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/ef4d7e442ca910c4764bce785146269b30cb5fc4",
-                "reference": "ef4d7e442ca910c4764bce785146269b30cb5fc4",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/a3cc8b044a6ea513310cbd48ef7333b384945638",
+                "reference": "a3cc8b044a6ea513310cbd48ef7333b384945638",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1"
+                "php": ">=7.2"
             },
             "provide": {
                 "ext-ctype": "*"
@@ -592,8 +592,8 @@
             "type": "library",
             "extra": {
                 "thanks": {
-                    "name": "symfony/polyfill",
-                    "url": "https://github.com/symfony/polyfill"
+                    "url": "https://github.com/symfony/polyfill",
+                    "name": "symfony/polyfill"
                 }
             },
             "autoload": {
@@ -627,7 +627,7 @@
                 "portable"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.29.0"
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.33.0"
             },
             "funding": [
                 {
@@ -639,28 +639,33 @@
                     "type": "github"
                 },
                 {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
                     "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-29T20:11:03+00:00"
+            "time": "2024-09-09T11:45:10+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.29.0",
+            "version": "v1.33.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "9773676c8a1bb1f8d4340a62efe641cf76eda7ec"
+                "reference": "6d857f4d76bd4b343eac26d6b539585d2bc56493"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/9773676c8a1bb1f8d4340a62efe641cf76eda7ec",
-                "reference": "9773676c8a1bb1f8d4340a62efe641cf76eda7ec",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/6d857f4d76bd4b343eac26d6b539585d2bc56493",
+                "reference": "6d857f4d76bd4b343eac26d6b539585d2bc56493",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1"
+                "ext-iconv": "*",
+                "php": ">=7.2"
             },
             "provide": {
                 "ext-mbstring": "*"
@@ -671,8 +676,8 @@
             "type": "library",
             "extra": {
                 "thanks": {
-                    "name": "symfony/polyfill",
-                    "url": "https://github.com/symfony/polyfill"
+                    "url": "https://github.com/symfony/polyfill",
+                    "name": "symfony/polyfill"
                 }
             },
             "autoload": {
@@ -707,7 +712,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.29.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.33.0"
             },
             "funding": [
                 {
@@ -719,83 +724,7 @@
                     "type": "github"
                 },
                 {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2024-01-29T20:11:03+00:00"
-        },
-        {
-            "name": "symfony/polyfill-php80",
-            "version": "v1.29.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "87b68208d5c1188808dd7839ee1e6c8ec3b02f1b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/87b68208d5c1188808dd7839ee1e6c8ec3b02f1b",
-                "reference": "87b68208d5c1188808dd7839ee1e6c8ec3b02f1b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-            },
-            "type": "library",
-            "extra": {
-                "thanks": {
-                    "name": "symfony/polyfill",
-                    "url": "https://github.com/symfony/polyfill"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "bootstrap.php"
-                ],
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php80\\": ""
-                },
-                "classmap": [
-                    "Resources/stubs"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ion Bazan",
-                    "email": "ion.bazan@gmail.com"
-                },
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.29.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
+                    "url": "https://github.com/nicolas-grekas",
                     "type": "github"
                 },
                 {
@@ -803,20 +732,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-29T20:11:03+00:00"
+            "time": "2024-12-23T08:48:59+00:00"
         },
         {
             "name": "tina4stack/tina4php",
-            "version": "v2.0.70",
+            "version": "v2.0.82",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tina4stack/tina4-php.git",
-                "reference": "3fe424879c7db6a64ad36d56f300ed31f040b772"
+                "reference": "52f045315e2d2819c5584182988e0331f7fc3cab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tina4stack/tina4-php/zipball/3fe424879c7db6a64ad36d56f300ed31f040b772",
-                "reference": "3fe424879c7db6a64ad36d56f300ed31f040b772",
+                "url": "https://api.github.com/repos/tina4stack/tina4-php/zipball/52f045315e2d2819c5584182988e0331f7fc3cab",
+                "reference": "52f045315e2d2819c5584182988e0331f7fc3cab",
                 "shasum": ""
             },
             "require": {
@@ -843,7 +772,6 @@
                 "phpmetrics/phpmetrics": "^2.8",
                 "phpunit/phpunit": "^9",
                 "roave/security-advisories": "dev-latest",
-                "tina4stack/tina4-documentation": "dev-main",
                 "tina4stack/tina4php-reports": "dev-main",
                 "tina4stack/tina4php-sqlite3": "^2.0"
             },
@@ -888,22 +816,22 @@
             "description": "Tina4 PHP",
             "support": {
                 "issues": "https://github.com/tina4stack/tina4-php/issues",
-                "source": "https://github.com/tina4stack/tina4-php/tree/v2.0.70"
+                "source": "https://github.com/tina4stack/tina4-php/tree/v2.0.82"
             },
-            "time": "2024-03-21T00:48:42+00:00"
+            "time": "2025-06-18T06:15:02+00:00"
         },
         {
             "name": "tina4stack/tina4php-core",
-            "version": "v2.0.13",
+            "version": "v2.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tina4stack/tina4php-core.git",
-                "reference": "797b3af7bc65b623c327c4c4c5c1d84c46576a7b"
+                "reference": "2b9cae4ccd7e1498de1f6749d835e7577c0a6997"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tina4stack/tina4php-core/zipball/797b3af7bc65b623c327c4c4c5c1d84c46576a7b",
-                "reference": "797b3af7bc65b623c327c4c4c5c1d84c46576a7b",
+                "url": "https://api.github.com/repos/tina4stack/tina4php-core/zipball/2b9cae4ccd7e1498de1f6749d835e7577c0a6997",
+                "reference": "2b9cae4ccd7e1498de1f6749d835e7577c0a6997",
                 "shasum": ""
             },
             "require-dev": {
@@ -937,22 +865,22 @@
             "description": "Tina4 PHP Core Functionality",
             "support": {
                 "issues": "https://github.com/tina4stack/tina4php-core/issues",
-                "source": "https://github.com/tina4stack/tina4php-core/tree/v2.0.13"
+                "source": "https://github.com/tina4stack/tina4php-core/tree/v2.0.14"
             },
-            "time": "2024-03-20T10:09:18+00:00"
+            "time": "2025-06-18T06:14:04+00:00"
         },
         {
             "name": "tina4stack/tina4php-database",
-            "version": "v2.0.14",
+            "version": "v2.0.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tina4stack/tina4php-database.git",
-                "reference": "0829df714e251b2eb59c4d62a84487a42967e64f"
+                "reference": "df59792b8607b8015b9fc6efeb41428e28ef18a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tina4stack/tina4php-database/zipball/0829df714e251b2eb59c4d62a84487a42967e64f",
-                "reference": "0829df714e251b2eb59c4d62a84487a42967e64f",
+                "url": "https://api.github.com/repos/tina4stack/tina4php-database/zipball/df59792b8607b8015b9fc6efeb41428e28ef18a8",
+                "reference": "df59792b8607b8015b9fc6efeb41428e28ef18a8",
                 "shasum": ""
             },
             "require": {
@@ -968,9 +896,10 @@
             "autoload": {
                 "files": [
                     "Tina4/constants.php",
-                    "Tina4/Interfaces/DataBase.php",
-                    "Tina4/Interfaces/DataBaseMetaData.php",
+                    "Tina4/DataBase.php",
+                    "Tina4/DataBaseMetaData.php",
                     "Tina4/DataBaseCore.php",
+                    "Tina4/DataBaseQuery.php",
                     "Tina4/DataError.php",
                     "Tina4/DataField.php",
                     "Tina4/DataRecord.php",
@@ -993,22 +922,22 @@
             "description": "Tina4 PHP Database Module",
             "support": {
                 "issues": "https://github.com/tina4stack/tina4php-database/issues",
-                "source": "https://github.com/tina4stack/tina4php-database/tree/v2.0.14"
+                "source": "https://github.com/tina4stack/tina4php-database/tree/v2.0.20"
             },
-            "time": "2024-03-11T16:27:53+00:00"
+            "time": "2025-08-18T12:19:20+00:00"
         },
         {
             "name": "tina4stack/tina4php-debug",
-            "version": "v2.0.11",
+            "version": "v2.0.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tina4stack/tina4php-debug.git",
-                "reference": "68c8f8814c985631e02fd83fd3acb7873162afee"
+                "reference": "7e5f187fc5292ef3134bb728fc538e1953e27289"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tina4stack/tina4php-debug/zipball/68c8f8814c985631e02fd83fd3acb7873162afee",
-                "reference": "68c8f8814c985631e02fd83fd3acb7873162afee",
+                "url": "https://api.github.com/repos/tina4stack/tina4php-debug/zipball/7e5f187fc5292ef3134bb728fc538e1953e27289",
+                "reference": "7e5f187fc5292ef3134bb728fc538e1953e27289",
                 "shasum": ""
             },
             "require": {
@@ -1042,28 +971,27 @@
             "description": "Tina4 PHP Debug Functionality",
             "support": {
                 "issues": "https://github.com/tina4stack/tina4php-debug/issues",
-                "source": "https://github.com/tina4stack/tina4php-debug/tree/v2.0.11"
+                "source": "https://github.com/tina4stack/tina4php-debug/tree/v2.0.13"
             },
-            "time": "2024-03-21T01:47:30+00:00"
+            "time": "2024-07-13T14:23:27+00:00"
         },
         {
             "name": "tina4stack/tina4php-env",
-            "version": "v2.0.5",
+            "version": "v2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tina4stack/tina4php-env.git",
-                "reference": "c04d5d1c8206db8a69ad67cc77ef1bf2dd340e35"
+                "reference": "69503e9ac3c131de1263740edce0969325999ee5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tina4stack/tina4php-env/zipball/c04d5d1c8206db8a69ad67cc77ef1bf2dd340e35",
-                "reference": "c04d5d1c8206db8a69ad67cc77ef1bf2dd340e35",
+                "url": "https://api.github.com/repos/tina4stack/tina4php-env/zipball/69503e9ac3c131de1263740edce0969325999ee5",
+                "reference": "69503e9ac3c131de1263740edce0969325999ee5",
                 "shasum": ""
             },
             "require-dev": {
                 "overtrue/phplint": "^2.0",
-                "phpunit/phpunit": "^9",
-                "tina4stack/tina4php-debug": "^2.0"
+                "phpunit/phpunit": "^9"
             },
             "type": "library",
             "autoload": {
@@ -1086,26 +1014,27 @@
             "description": "Tina4 PHP Environment Functionality",
             "support": {
                 "issues": "https://github.com/tina4stack/tina4php-env/issues",
-                "source": "https://github.com/tina4stack/tina4php-env/tree/v2.0.5"
+                "source": "https://github.com/tina4stack/tina4php-env/tree/v2.0.6"
             },
-            "time": "2022-08-01T17:21:45+00:00"
+            "time": "2025-08-12T06:24:19+00:00"
         },
         {
             "name": "tina4stack/tina4php-orm",
-            "version": "v2.0.15",
+            "version": "v2.0.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tina4stack/tina4php-orm.git",
-                "reference": "6e3a44f68d75a10d25e1c6383977ed078ba54bd7"
+                "reference": "fa8655d07c83b1a3ca157e23be7b6b9b67a326d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tina4stack/tina4php-orm/zipball/6e3a44f68d75a10d25e1c6383977ed078ba54bd7",
-                "reference": "6e3a44f68d75a10d25e1c6383977ed078ba54bd7",
+                "url": "https://api.github.com/repos/tina4stack/tina4php-orm/zipball/fa8655d07c83b1a3ca157e23be7b6b9b67a326d6",
+                "reference": "fa8655d07c83b1a3ca157e23be7b6b9b67a326d6",
                 "shasum": ""
             },
             "require-dev": {
                 "overtrue/phplint": "^2.0",
+                "phpmetrics/phpmetrics": "^0.0.1",
                 "phpunit/phpunit": "^9",
                 "roave/security-advisories": "dev-latest",
                 "tina4stack/tina4php-firebird": "^2.0"
@@ -1128,9 +1057,9 @@
             "description": "Tina4 ORM Module",
             "support": {
                 "issues": "https://github.com/tina4stack/tina4php-orm/issues",
-                "source": "https://github.com/tina4stack/tina4php-orm/tree/v2.0.15"
+                "source": "https://github.com/tina4stack/tina4php-orm/tree/v2.0.21"
             },
-            "time": "2024-03-20T10:09:19+00:00"
+            "time": "2025-09-01T07:51:46+00:00"
         },
         {
             "name": "tina4stack/tina4php-shape",
@@ -1179,26 +1108,26 @@
         },
         {
             "name": "twig/twig",
-            "version": "v3.9.3",
+            "version": "v3.21.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "a842d75fed59cdbcbd3a3ad7fb9eb768fc350d58"
+                "reference": "285123877d4dd97dd7c11842ac5fb7e86e60d81d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/a842d75fed59cdbcbd3a3ad7fb9eb768fc350d58",
-                "reference": "a842d75fed59cdbcbd3a3ad7fb9eb768fc350d58",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/285123877d4dd97dd7c11842ac5fb7e86e60d81d",
+                "reference": "285123877d4dd97dd7c11842ac5fb7e86e60d81d",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2.5",
+                "php": ">=8.1.0",
                 "symfony/deprecation-contracts": "^2.5|^3",
                 "symfony/polyfill-ctype": "^1.8",
-                "symfony/polyfill-mbstring": "^1.3",
-                "symfony/polyfill-php80": "^1.22"
+                "symfony/polyfill-mbstring": "^1.3"
             },
             "require-dev": {
+                "phpstan/phpstan": "^2.0",
                 "psr/container": "^1.0|^2.0",
                 "symfony/phpunit-bridge": "^5.4.9|^6.4|^7.0"
             },
@@ -1242,7 +1171,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.9.3"
+                "source": "https://github.com/twigphp/Twig/tree/v3.21.1"
             },
             "funding": [
                 {
@@ -1254,16 +1183,16 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-04-18T11:59:33+00:00"
+            "time": "2025-05-03T07:21:55+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
