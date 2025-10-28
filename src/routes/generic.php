@@ -10,7 +10,7 @@ use Tina4;
 \Tina4\Get::add($_ENV["GENERIC_API_BASE_URL"] . "/ping", function(Tina4\Response $response){
     $version = [
         "name" => "generic-api",
-        "version" => "0.0.4"
+        "version" => "0.0.6"
     ];
     return $response($version, HTTP_OK, APPLICATION_JSON);
 });
@@ -54,15 +54,17 @@ use Tina4;
 
         // Set the limits
         $limit = 10;
-        if(isset($request->params["limit"])){
-            $limit = $request->params["limit"];
-        }
         $offset = 0;
-        if(isset($request->params["offset"])){
-            $offset = $request->params["offset"];
+        if(!empty($request->params)){
+            if(isset($request->params["limit"])){
+                $limit = $request->params["limit"];
+            }
+            $offset = 0;
+            if(isset($request->params["offset"])){
+                $offset = $request->params["offset"];
+            }
+            $where = FilterHelper::buildFilterClause($class, $request->params);
         }
-
-        $where = FilterHelper::buildFilterClause($class->fieldMapping, $request->params);
 
         // build return object
         $result = (new \stdClass());
