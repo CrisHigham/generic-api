@@ -11,7 +11,7 @@ class FilterHelper
      * @param array $parameters
      * @return array
      */
-    public static function buildFilterClause(array $fieldMapping, array $parameters): array
+    public static function buildFilterClause(object $class, array $parameters): array
     {
         // Build the where clause
         $where["sql"] = "";
@@ -20,10 +20,13 @@ class FilterHelper
             if($key == "limit" || $key == "offset"){
                 continue;
             }
+            if (!property_exists($class, $key)) {
+                continue;
+            }
             // This is what the line should be, but due to a problem in Tina4 Orm I have rebuilt the function.
             // @todo reinstate this usage once Tina4 is fixed
             //$columnName = $class->getFieldName($key, $class->fieldMapping);
-            $columnName = Utilities::getFieldName($key, $fieldMapping);
+            $columnName = Utilities::getFieldName($key, $class->fieldMapping);
             $valueArray = explode(":", $value);
             $operator = $valueArray[0];
             $term = $valueArray[1];
